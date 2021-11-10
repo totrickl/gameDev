@@ -1,0 +1,17 @@
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\CashFlow.deps.json
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\CashFlow.dll
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\CashFlow.pdb
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.GeneratedMSBuildEditorConfig.editorconfig
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.AssemblyInfoInputs.cache
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.AssemblyInfo.cs
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.csproj.CoreCompileInputs.cache
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\XamlC.stamp
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.dll
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.pdb
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.csproj.AssemblyReference.cache
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\CreatePlayerPage.xaml.g.cs
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\cashFlowGameData.json
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\XamarinFormsLibrary1.dll
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\XamarinFormsLibrary1.pdb

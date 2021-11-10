@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:CashFlow.ViewModels;assembly=CashFlow"
+             x:Class="CashFlow.Views.CreatePlayerPage">
+       <ContentPage.BindingContext>
+              <viewModels:PlayerViewModel/>
+       </ContentPage.BindingContext>
+       <StackLayout>
+        <Entry Placeholder="player name"
+               Text="{Binding PlayerName}"
+               HeightRequest="100" />
+        <Entry Placeholder="salary"
+               Text="{Binding Salary}"
+               HeightRequest="100" />
+        <Entry Placeholder="passive income"
+               Text="{Binding PassiveIncome}"
+               HeightRequest="100" />
+        <Entry Placeholder="general income"
+               Text="{Binding GeneralIncome}"
+               HeightRequest="100" />
+        <Entry Placeholder="general expense"
+               Text="{Binding GeneralExpense}"
+               HeightRequest="100" />
+        <Entry Placeholder="pay check per month"
+               Text="{Binding PayCheck}"
+               HeightRequest="100" />
+        <!-- Layout children in two columns -->
+        <Grid ColumnDefinitions="*,*">
+            <Button Text="Save" Grid.Column="1"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="2"
+                    Text="Back"
+                    Clicked="OnBackButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

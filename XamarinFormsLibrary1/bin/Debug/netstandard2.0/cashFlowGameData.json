@@ -1,0 +1,41 @@
+{
+  "playerName" : "name",
+  "smallCircle": {
+    "salary" : 0,
+    "passiveIncome": 0,
+    "generalIncome": 0,
+    "childrenCount": 0,
+    "generalExpense": 0,
+    "payCheck": 0,
+    "childrenExpense": 0,
+    "capitalInvestment": 0,
+    "dividends" : 0,
+    "tax": 0,
+    "housePayment": 0,
+    "educationCreditPayment": 0,
+    "carCreditPayment": 0,
+    "creditCardPayment": 0,
+    "retailExpense" : "розничные расходы - тут будет 0",
+    "additionalExpense": 0,
+    "creditPercent": 0,
+    "realEstate": [],
+    "business": [],
+    "stock": [],
+    "liabilities":{
+      "houseMortgage": 0,
+      "educationCredit": 0,
+      "carCredit": 0,
+      "creditCardDebt": 0,
+      "retailDebt": 0,
+      "otherMortgage": 0,
+      "liabilitiesDebt": 0,
+      "bankCredit": 0
+    }
+  },
+  "bigCircle": {
+    "passiveIncomeFromSmallCircle" : 0,
+    "initialPassiveIncome": 0,
+    "winningPassiveIncome": 0,
+    "businesses" : []
+  }
+}
