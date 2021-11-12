@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Android", "CashFlo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.iOS", "CashFlow\CashFlow.iOS\CashFlow.iOS.csproj", "{8A902F89-4DBC-4DD1-9CFC-0C0207FC890E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsLibrary1", "XamarinFormsLibrary1\XamarinFormsLibrary1.csproj", "{61939465-5435-4AE3-99D3-2F9D286A53A1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +24,5 @@ Global
 		{8A902F89-4DBC-4DD1-9CFC-0C0207FC890E}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{8A902F89-4DBC-4DD1-9CFC-0C0207FC890E}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
 		{8A902F89-4DBC-4DD1-9CFC-0C0207FC890E}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
-		{61939465-5435-4AE3-99D3-2F9D286A53A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61939465-5435-4AE3-99D3-2F9D286A53A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61939465-5435-4AE3-99D3-2F9D286A53A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61939465-5435-4AE3-99D3-2F9D286A53A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

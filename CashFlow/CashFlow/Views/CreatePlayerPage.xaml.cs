@@ -14,11 +14,10 @@ namespace CashFlow.Views
 {
     public partial class CreatePlayerPage : ContentPage
     {
-        private DataAccessor _accessor;
         public CreatePlayerPage()
         {
-            _accessor = new DataAccessor();
             InitializeComponent();
+            Content.BindingContext = App.database.GetPlayerById(-1);
         }
         public CreatePlayerPage(object bindingContext)
         {
@@ -26,18 +25,19 @@ namespace CashFlow.Views
             BindingContext = bindingContext;
         }
 
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            Content.BindingContext = await App.database.GetPlayerById(0);
+        }
+        
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var player = BindingContext as  Player;
-            Console.WriteLine($"Player {player.PlayerName} created");
-            var jsonData = JsonSerializer.Serialize(player);
-            /*using (StreamReader sr = new StreamReader(jsonData))
+            if (player != null)
             {
-                _accessor.UpdateFileData(sr);
-            }*/
-            Console.WriteLine("Data {0}", jsonData);
-            // Navigate backwards
-            //await Shell.Current.GoToAsync("..");
+                await App.database.SavePlayerAsync(player);
+            }
         }
 
         async void OnBackButtonClicked(object sender, EventArgs e)
