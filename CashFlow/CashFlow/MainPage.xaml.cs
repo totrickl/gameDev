@@ -1,4 +1,5 @@
-﻿using CashFlow.Views;
+﻿using CashFlow.ViewModels;
+using CashFlow.Views;
 using Xamarin.Forms;
 
 namespace CashFlow
@@ -12,7 +13,7 @@ namespace CashFlow
         
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new CreatePlayerPage());
+            await Navigation.PushAsync(new CreatePlayerPage( new PlayerViewModel(){PlayerName = "temp", Salary = 1000}));
         }
     }
 }
