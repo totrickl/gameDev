@@ -1,24 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CashFlow.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.Text.Json;
-using CashFlow.DataAccess;
+using CashFlow.ViewModels;
 
 namespace CashFlow.Views
 {
     public partial class CreatePlayerPage : ContentPage
     {
-        private DataAccessor _accessor;
         public CreatePlayerPage()
         {
-            _accessor = new DataAccessor();
             InitializeComponent();
+            //Content.BindingContext = App.database.GetPlayerById(-1);
         }
         public CreatePlayerPage(object bindingContext)
         {
@@ -26,18 +17,22 @@ namespace CashFlow.Views
             BindingContext = bindingContext;
         }
 
+        /*protected override async void OnAppearing()
+        {
+            base.OnAppearing();/*
+            var player = await App.database.GetPlayerById(-1);
+            BindingContext = player;
+            this.ApplyBindings();#1#
+        }*/
+        
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            var player = BindingContext as  Player;
-            Console.WriteLine($"Player {player.PlayerName} created");
-            var jsonData = JsonSerializer.Serialize(player);
-            /*using (StreamReader sr = new StreamReader(jsonData))
+            if (BindingContext is PlayerViewModel player)
             {
-                _accessor.UpdateFileData(sr);
-            }*/
-            Console.WriteLine("Data {0}", jsonData);
-            // Navigate backwards
-            //await Shell.Current.GoToAsync("..");
+                await App.database.SavePlayerAsync(player);
+                var playerCreated = await App.database.GetPlayerById(player.Id);
+                await Navigation.PushAsync(new PlayerMainPage(playerCreated)); 
+            }
         }
 
         async void OnBackButtonClicked(object sender, EventArgs e)

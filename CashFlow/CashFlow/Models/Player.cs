@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using SQLite;
 
 namespace CashFlow.Models
 {
     public class Player
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
         public string PlayerName { get; set; }
         public int Salary { get; set; }
         public int PassiveIncome { get; set; }

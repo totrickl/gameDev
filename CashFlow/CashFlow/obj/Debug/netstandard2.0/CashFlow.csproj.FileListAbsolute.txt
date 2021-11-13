@@ -13,5 +13,5 @@ D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\CashFlow.csproj.AssemblyReference.cache
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\CreatePlayerPage.xaml.g.cs
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\cashFlowGameData.json
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\XamarinFormsLibrary1.dll
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\bin\Debug\netstandard2.0\XamarinFormsLibrary1.pdb
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\obj\Debug\netstandard2.0\Views\PlayerMainPage.xaml.g.cs

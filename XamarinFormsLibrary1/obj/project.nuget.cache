@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "IeQjqb84ZUr1fNEVnAaj94yz05jyCsjb8eOzbDK/cdqgcSuFqU4aH3yje76VDDvZicrTlE2FxkonvJ+YbWTc3Q==",
+  "success": true,
+  "projectFilePath": "D:\\asynytskyi\\repos\\GameDev\\XamarinFormsLibrary1\\XamarinFormsLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
