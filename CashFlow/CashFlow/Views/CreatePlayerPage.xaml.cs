@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CashFlow.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.Text.Json;
-using CashFlow.DataAccess;
+using CashFlow.ViewModels;
 
 namespace CashFlow.Views
 {
@@ -17,7 +9,7 @@ namespace CashFlow.Views
         public CreatePlayerPage()
         {
             InitializeComponent();
-            Content.BindingContext = App.database.GetPlayerById(-1);
+            //Content.BindingContext = App.database.GetPlayerById(-1);
         }
         public CreatePlayerPage(object bindingContext)
         {
@@ -25,18 +17,21 @@ namespace CashFlow.Views
             BindingContext = bindingContext;
         }
 
-        protected override async void OnAppearing()
+        /*protected override async void OnAppearing()
         {
-            base.OnAppearing();
-            Content.BindingContext = await App.database.GetPlayerById(0);
-        }
+            base.OnAppearing();/*
+            var player = await App.database.GetPlayerById(-1);
+            BindingContext = player;
+            this.ApplyBindings();#1#
+        }*/
         
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            var player = BindingContext as  Player;
-            if (player != null)
+            if (BindingContext is PlayerViewModel player)
             {
                 await App.database.SavePlayerAsync(player);
+                var playerCreated = await App.database.GetPlayerById(player.Id);
+                await Navigation.PushAsync(new PlayerMainPage(playerCreated)); 
             }
         }
 

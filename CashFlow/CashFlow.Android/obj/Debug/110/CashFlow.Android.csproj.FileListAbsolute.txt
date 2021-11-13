@@ -210,8 +210,6 @@ D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\asse
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\assets\Xamarin.Google.Android.Material.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\assets\Xamarin.Google.Android.Material.pdb
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\assets\XamarinFormsLibrary1.dll
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\assets\XamarinFormsLibrary1.pdb
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\typemaps.arm64-v8a.s
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\typemaps.armeabi-v7a.s
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.Android\obj\Debug\110\android\typemaps.x86.s

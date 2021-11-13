@@ -1,21 +1,23 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using CashFlow.Annotations;
+using SQLite;
 
 namespace CashFlow.ViewModels
 {
     public class PlayerViewModel : INotifyPropertyChanged
     {
         //TODO: extend model with other fields
+        [PrimaryKey, AutoIncrement] public int Id { get; set; }
         private string _playerName = string.Empty;
-        private int _salary = 0;
-        private int _passiveIncome = 0;
-        private int _generalIncome = 0;
-        private int _generalExpense = 0;
-        private int _payCheck = 0;
+        private int _salary;
+        private int _passiveIncome;
+        private int _generalIncome;
+        private int _generalExpense;
+        private int _payCheck;
         public string PlayerName
         {
-            get { return _playerName; }
+            get => _playerName;
             set
             {
                 _playerName = value;
@@ -24,7 +26,7 @@ namespace CashFlow.ViewModels
         }
         public int Salary
         {
-            get { return _salary; }
+            get =>  _salary;
             set
             {
                 _salary = value;
@@ -34,7 +36,7 @@ namespace CashFlow.ViewModels
         
         public int PassiveIncome
         {
-            get { return _passiveIncome; }
+            get => _passiveIncome;
             set
             {
                 _passiveIncome = value;
@@ -44,7 +46,7 @@ namespace CashFlow.ViewModels
         
         public int GeneralIncome
         {
-            get { return _generalIncome; }
+            get => _generalIncome;
             set
             {
                 _generalIncome = value;
@@ -54,7 +56,7 @@ namespace CashFlow.ViewModels
         
         public int GeneralExpense
         {
-            get { return _generalExpense; }
+            get => _generalExpense;
             set
             {
                 _generalExpense = value;
@@ -64,7 +66,7 @@ namespace CashFlow.ViewModels
         
         public int PayCheck
         {
-            get { return _payCheck; }
+            get => _payCheck;
             set
             {
                 _payCheck = value;

@@ -7,25 +7,19 @@
        <ContentPage.BindingContext>
               <viewModels:PlayerViewModel/>
        </ContentPage.BindingContext>
-       <StackLayout>
+       <StackLayout Grid.Row="1">
         <Entry Placeholder="player name"
-               Text="{Binding PlayerName}"
-               HeightRequest="100" />
+               Text="{Binding PlayerName}"/>
         <Entry Placeholder="salary"
-               Text="{Binding Salary}"
-               HeightRequest="100" />
+               Text="{Binding Salary}"/>
         <Entry Placeholder="passive income"
-               Text="{Binding PassiveIncome}"
-               HeightRequest="100" />
+               Text="{Binding PassiveIncome}"/>
         <Entry Placeholder="general income"
-               Text="{Binding GeneralIncome}"
-               HeightRequest="100" />
+               Text="{Binding GeneralIncome}"/>
         <Entry Placeholder="general expense"
-               Text="{Binding GeneralExpense}"
-               HeightRequest="100" />
+               Text="{Binding GeneralExpense}"/>
         <Entry Placeholder="pay check per month"
-               Text="{Binding PayCheck}"
-               HeightRequest="100" />
+               Text="{Binding PayCheck}"/>
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
             <Button Text="Save" Grid.Column="1"

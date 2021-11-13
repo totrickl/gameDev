@@ -2,7 +2,9 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using CashFlow.DataAccess;
+using CashFlow.ViewModels;
 using CashFlow.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -30,7 +32,7 @@ namespace CashFlow
         public App()
         {
             InitializeComponent();
-            MainPage = new CreatePlayerPage();
+            MainPage = new NavigationPage(new MainPage());
             // MainPage = new AppShell();
         }
 

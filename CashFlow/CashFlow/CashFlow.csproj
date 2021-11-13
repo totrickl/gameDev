@@ -24,6 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\XamarinFormsLibrary1\XamarinFormsLibrary1.csproj" />
+      <Reference Include="Mono.Android" />
     </ItemGroup>
 </Project>

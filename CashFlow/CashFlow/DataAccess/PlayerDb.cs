@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using SQLite;
 using CashFlow.Models;
 using System.Data;
+using CashFlow.ViewModels;
 
 namespace CashFlow.DataAccess
 {
@@ -13,10 +14,10 @@ namespace CashFlow.DataAccess
         public PlayerDb(string dbPath)
         {
             connection = new SQLiteAsyncConnection(dbPath);
-            connection.CreateTableAsync<Player>();
+            connection.CreateTableAsync<PlayerViewModel>();
         }
 
-        public async Task<Player> SavePlayerAsync(Player player)
+        public async Task<PlayerViewModel> SavePlayerAsync(PlayerViewModel player)
         {
             if (player.Id != 0)
             {
@@ -24,19 +25,29 @@ namespace CashFlow.DataAccess
             }
             else
             {
-                var pid = await connection.InsertAsync(player);
-                return await GetPlayerById(pid);
+                try
+                {
+                    var pid = await connection.InsertAsync(player);
+                    var player1 = await GetPlayerById(pid);
+                    return player1;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+                // return await GetPlayerById(pid);
             }
         }
 
-        public async Task<Player> GetPlayerById(int id)
+        public async Task<PlayerViewModel> GetPlayerById(int id)
         {
             if (id == -1)
             {
-                return await SavePlayerAsync(new Player());
+                return await SavePlayerAsync(new PlayerViewModel());
             }
-            
-            return await connection.GetAsync<Player>(id);
+
+            return await connection.GetAsync<PlayerViewModel>(id);
         }
     }
 }

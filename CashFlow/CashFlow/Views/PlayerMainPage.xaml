@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:CashFlow.ViewModels;assembly=CashFlow"
+             x:Class="CashFlow.Views.PlayerMainPage">
+        <ContentPage.BindingContext>
+            <viewModels:PlayerViewModel/>
+        </ContentPage.BindingContext>
+        <StackLayout Grid.Column="3">
+            <Grid x:Name="fields" ColumnDefinitions="*,*">
+                <Label Text="{Binding PlayerName}"></Label>
+                <Entry Grid.Column="1" IsEnabled="False" Text="{Binding Salary}"></Entry>
+                <Entry Grid.Column="2" IsEnabled="False" Text="{Binding PassiveIncome}"></Entry>
+                <Entry Grid.Column="3" IsEnabled="False" Text="{Binding GeneralIncome}"></Entry>
+                <Entry Grid.Column="4" IsEnabled="False" Text="{Binding GeneralExpense}"></Entry>
+                <Entry Grid.Column="5" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
+            </Grid>
+            <Grid ColumnDefinitions="*,*">
+                <Button Text="Edit finances" Grid.Column="1"
+                        Clicked="OnEditModelButtonClicked" />
+            </Grid>
+        </StackLayout>
+
+</ContentPage>
