@@ -65,14 +65,13 @@
         <AndroidResource Include="Resources\values\colors.xml" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\XamarinFormsLibrary1\XamarinFormsLibrary1.csproj">
-          <Project>{61939465-5435-4ae3-99d3-2f9d286a53a1}</Project>
-          <Name>XamarinFormsLibrary1</Name>
-        </ProjectReference>
         <ProjectReference Include="..\CashFlow\CashFlow.csproj">
             <Project>{8D5BB373-A7F7-45C1-88B9-99AE14624601}</Project>
             <Name>CashFlow</Name>
         </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="obj\Debug\110\designtime" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
