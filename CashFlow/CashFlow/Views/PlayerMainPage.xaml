@@ -8,16 +8,18 @@
             <viewModels:PlayerViewModel/>
         </ContentPage.BindingContext>
         <StackLayout Grid.Column="3">
+            <Label HeightRequest="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Text="{Binding PlayerName}"></Label>
             <Grid x:Name="fields" ColumnDefinitions="*,*">
-                <Label Text="{Binding PlayerName}"></Label>
                 <Entry Grid.Column="1" IsEnabled="False" Text="{Binding Salary}"></Entry>
                 <Entry Grid.Column="2" IsEnabled="False" Text="{Binding PassiveIncome}"></Entry>
                 <Entry Grid.Column="3" IsEnabled="False" Text="{Binding GeneralIncome}"></Entry>
                 <Entry Grid.Column="4" IsEnabled="False" Text="{Binding GeneralExpense}"></Entry>
                 <Entry Grid.Column="5" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
             </Grid>
-            <Grid ColumnDefinitions="*,*">
-                <Button Text="Edit finances" Grid.Column="1"
+            <Grid x:Name="buttons" ColumnDefinitions="*,*">
+                <Button x:Name="saveChanges" IsVisible="False" Text="Save changes" Grid.Column="1"
+                        Clicked="OnSaveChangesClicked" />
+                <Button Text="Edit finances" Grid.Column="2"
                         Clicked="OnEditModelButtonClicked" />
             </Grid>
         </StackLayout>

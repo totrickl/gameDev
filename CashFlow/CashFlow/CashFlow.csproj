@@ -22,8 +22,4 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </EmbeddedResource>
     </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Mono.Android" />
-    </ItemGroup>
 </Project>
