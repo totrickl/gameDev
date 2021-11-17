@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7nfoUNFUVcZt/OBEQR7qxUr1OKOUTIKjDyftNeX3cKLMRXrZikG+zlzShv/TpEcfhkikCketw/No5CXMCXucrQ==",
+  "dgSpecHash": "E2Iw+IFA5euZS0qHevUHZV/E61j872Qc6cHnAYx+26o/inXxsA8cxavRqWOOKe1ORQ/y3fDQ2C9Ru6hQQj8rjg==",
   "success": true,
   "projectFilePath": "D:\\asynytskyi\\repos\\GameDev\\CashFlow\\CashFlow\\CashFlow.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\anton.synytskyi\\.nuget\\packages\\system.text.encodings.web\\6.0.0-rc.2.21480.5\\system.text.encodings.web.6.0.0-rc.2.21480.5.nupkg.sha512",
     "C:\\Users\\anton.synytskyi\\.nuget\\packages\\system.text.json\\6.0.0-rc.2.21480.5\\system.text.json.6.0.0-rc.2.21480.5.nupkg.sha512",
     "C:\\Users\\anton.synytskyi\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\anton.synytskyi\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\anton.synytskyi\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
