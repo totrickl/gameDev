@@ -7,8 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="fixed grid layout and isEnabled now work only for entries, added labels">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/ViewModels/PlayerViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/ViewModels/PlayerViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" afterDir="false" />
     </list>
@@ -39,6 +41,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/13/BindableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/144/TemplatedPage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/b7/6b1b5157/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3d3745f68e94f23a9c6f2b3d5ef4eeb15588/5/PropertyChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/67/Element_StyleSheets.cs" root0="SKIP_HIGHLIGHTING" />
@@ -92,7 +95,7 @@
       <workItem from="1637126433741" duration="311000" />
       <workItem from="1637126850400" duration="2360000" />
       <workItem from="1637214548736" duration="4467000" />
-      <workItem from="1637219097241" duration="2203000" />
+      <workItem from="1637219097241" duration="3231000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1637127995466</created>
@@ -115,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637220718609</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed grid layout and isEnabled now work only for entries, added labels">
+      <created>1637221419801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637221419801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

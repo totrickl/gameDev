@@ -21,7 +21,8 @@ namespace CashFlow
                 page = new CreatePlayerPage(new PlayerViewModel()
                 {
                     PlayerName = "temp",
-                    Salary = 1000
+                    Salary = 1000,
+                    Cash = 2000
                 });
             });
             await Navigation.PushAsync(page);

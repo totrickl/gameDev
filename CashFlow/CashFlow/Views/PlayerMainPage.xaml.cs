@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CashFlow.Models;
 using CashFlow.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -45,6 +46,16 @@ namespace CashFlow.Views
         private void SwitchEntriesEnabled(IList<View> fields, bool enabled)
         {
             fields.OfType<Entry>().ForEach(f => f.IsEnabled = enabled);
+        }
+
+        private async void OnAddExpenseButtonClicked(object sender, EventArgs e)
+        {
+            string promptValue = await DisplayPromptAsync("Add expense", "Insert money amount to spend");
+            var result = int.Parse(promptValue);
+            if (BindingContext is PlayerViewModel player)
+            {
+                player.Cash -= result;
+            }
         }
     }
 }

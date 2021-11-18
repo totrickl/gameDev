@@ -15,6 +15,7 @@ namespace CashFlow.ViewModels
         private int _generalIncome;
         private int _generalExpense;
         private int _payCheck;
+        private int _cash;
         public string PlayerName
         {
             get => _playerName;
@@ -71,6 +72,15 @@ namespace CashFlow.ViewModels
             {
                 _payCheck = value;
                 OnPropertyChanged(nameof(PayCheck));
+            }
+        }
+        public int Cash
+        {
+            get => _cash;
+            set
+            {
+                _cash = value;
+                OnPropertyChanged(nameof(Cash));
             }
         }
 

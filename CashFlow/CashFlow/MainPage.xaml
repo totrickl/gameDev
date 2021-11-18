@@ -6,7 +6,7 @@
 
     <StackLayout>
         <!--Add Button Here -->
-        <Button Text="Create player" Clicked="Handle_Clicked"/>
+        <Button VerticalOptions="End" Text="Create player" Clicked="Handle_Clicked"/>
         <!--More Labels here -->
     </StackLayout>
 

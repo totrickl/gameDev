@@ -20,12 +20,16 @@
                 <Entry Grid.Row="1" Grid.Column="3" IsEnabled="False" Text="{Binding GeneralExpense}"></Entry>
                 <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="4">Pay check</Label>
                 <Entry Grid.Row="1" Grid.Column="4" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="5">Cash</Label>
+                <Entry Grid.Row="1" Grid.Column="5" IsEnabled="False" Text="{Binding Cash}"></Entry>
             </Grid>
             <Grid x:Name="Buttons" ColumnDefinitions="*">
-                <Button x:Name="SaveChanges" IsVisible="False" Text="Save changes" Grid.Column="1"
+                <Button x:Name="SaveChanges" IsVisible="False" Text="Save changes" Grid.Column="0"
                         Clicked="OnSaveChangesClicked" />
-                <Button Text="Edit finances" Grid.Column="2"
+                <Button Text="Edit finances" Grid.Column="1"
                         Clicked="OnEditModelButtonClicked" />
+                <Button Text="Add expense" Grid.Column="2"
+                        Clicked="OnAddExpenseButtonClicked" />
             </Grid>
         </StackLayout>
 

@@ -20,6 +20,8 @@
                Text="{Binding GeneralExpense}"/>
         <Entry Placeholder="pay check per month"
                Text="{Binding PayCheck}"/>
+        <Entry Placeholder="cash amount"
+               Text="{Binding Cash}"/>
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
             <Button Text="Save" Grid.Column="1"
