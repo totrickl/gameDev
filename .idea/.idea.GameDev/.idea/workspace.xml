@@ -5,14 +5,10 @@
     <projectFile>CashFlow/CashFlow.Android/CashFlow.Android.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="fixed grid layout and isEnabled now work only for entries, added labels">
+    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="added 'add expense' function">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/Investment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Models/Investment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/ViewModels/PlayerViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/ViewModels/PlayerViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,27 +22,28 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/120/ShellNavigationState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/112/Shell.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/4/Forms.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/83/1f582f4f/Permission.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/B/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/c1/ef87150b/Environment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83c3732f9ce24539ba119e37dc4856a62400/1/CrossPermissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/2d/83fbefc7/IPermissions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01c96d411fe34bd5940c99a56515582b18c00/b9/a072dce7/SQLiteAsyncConnection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/41/ContentPage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/10/FormsAppCompatActivity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/5f/bed95e8b/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/50/DependencyService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/13/BindableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/144/TemplatedPage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/b7/6b1b5157/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3d3745f68e94f23a9c6f2b3d5ef4eeb15588/5/PropertyChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/CreatePlayerPage.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/4/Forms.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83c3732f9ce24539ba119e37dc4856a62400/1/CrossPermissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/2d/83fbefc7/IPermissions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/41/ContentPage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/5f/bed95e8b/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/144/TemplatedPage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/b7/6b1b5157/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/67/Element_StyleSheets.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f06abd60facc44619779082a45c803361a390/3A/Permissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/D8/Page.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
@@ -95,7 +92,7 @@
       <workItem from="1637126433741" duration="311000" />
       <workItem from="1637126850400" duration="2360000" />
       <workItem from="1637214548736" duration="4467000" />
-      <workItem from="1637219097241" duration="3231000" />
+      <workItem from="1637219097241" duration="4059000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1637127995466</created>
@@ -125,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637221419801</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added 'add expense' function">
+      <created>1637222523482</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637222523482</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +181,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="upd" />
     <MESSAGE value="fixed grid layout and isEnabled now work only for entries, added labels" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed grid layout and isEnabled now work only for entries, added labels" />
+    <MESSAGE value="added 'add expense' function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 'add expense' function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

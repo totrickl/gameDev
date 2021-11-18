@@ -1,6 +1,6 @@
 namespace CashFlow.Models
 {
-    public class Investment
+    public abstract class Investment
     {
         public string Name { get; set; }
         public int FirstPayment { get; set; }

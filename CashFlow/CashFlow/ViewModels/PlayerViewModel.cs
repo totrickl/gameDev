@@ -1,13 +1,16 @@
-﻿using System.ComponentModel;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using CashFlow.Annotations;
+using CashFlow.Models;
 using SQLite;
 
 namespace CashFlow.ViewModels
 {
     public class PlayerViewModel : INotifyPropertyChanged
     {
-        //TODO: extend model with other fields
+        #region private fields
         [PrimaryKey, AutoIncrement] public int Id { get; set; }
         private string _playerName = string.Empty;
         private int _salary;
@@ -16,6 +19,13 @@ namespace CashFlow.ViewModels
         private int _generalExpense;
         private int _payCheck;
         private int _cash;
+        private ICollection<Investment> _businesses;
+        private ICollection<Investment> _stocks;
+        private ICollection<Investment> _realEstates;
+        #endregion
+        //TODO: extend model with other fields
+
+        #region get/set
         public string PlayerName
         {
             get => _playerName;
@@ -34,7 +44,6 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(Salary));
             }
         }
-        
         public int PassiveIncome
         {
             get => _passiveIncome;
@@ -44,7 +53,6 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(PassiveIncome));
             }
         }
-        
         public int GeneralIncome
         {
             get => _generalIncome;
@@ -54,7 +62,6 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(GeneralIncome));
             }
         }
-        
         public int GeneralExpense
         {
             get => _generalExpense;
@@ -64,7 +71,6 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(GeneralExpense));
             }
         }
-        
         public int PayCheck
         {
             get => _payCheck;
@@ -83,12 +89,41 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(Cash));
             }
         }
+        public ICollection<Investment> Businesses
+        {
+            get => _businesses;
+            set
+            {
+                _businesses = value;
+                OnPropertyChanged(nameof(Businesses));
+            }
+        }
+        public ICollection<Investment> Stocks
+        {
+            get => _stocks;
+            set
+            {
+                _stocks = value;
+                OnPropertyChanged(nameof(Stocks));
+            }
+        }
+        public ICollection<Investment> RealEstates
+        {
+            get => _realEstates;
+            set
+            {
+                _realEstates = value;
+                OnPropertyChanged(nameof(RealEstates));
+            }
+        }
 
+        #endregion
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
-        void OnPropertyChanged(string playerName = null)
+        void OnPropertyChanged(string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(playerName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
