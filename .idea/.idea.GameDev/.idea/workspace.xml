@@ -5,7 +5,12 @@
     <projectFile>CashFlow/CashFlow.Android/CashFlow.Android.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="upd" />
+    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="upd">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +87,9 @@
       <option name="presentableId" value="Default" />
       <updated>1637126430111</updated>
       <workItem from="1637126433741" duration="311000" />
-      <workItem from="1637126850400" duration="1816000" />
+      <workItem from="1637126850400" duration="2360000" />
+      <workItem from="1637214548736" duration="4467000" />
+      <workItem from="1637219097241" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1637127995466</created>
@@ -91,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637127995466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="upd">
+      <created>1637138768588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637138768588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +173,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs</url>
+          <line>46</line>
+          <properties documentPath="D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\Views\PlayerMainPage.xaml.cs" initialLine="46" containingFunctionPresentation="lambda expression inside method 'OnSaveChangesClicked'">
+            <startOffsets>
+              <option value="1427" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1442" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

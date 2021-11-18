@@ -3,20 +3,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:CashFlow.ViewModels;assembly=CashFlow"
-             x:Class="CashFlow.Views.PlayerMainPage">
+             x:Class="CashFlow.Views.PlayerMainPage"
+             Title="{Binding PlayerName}">
         <ContentPage.BindingContext>
             <viewModels:PlayerViewModel/>
         </ContentPage.BindingContext>
-        <StackLayout Grid.Column="3">
-            <Label HeightRequest="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Text="{Binding PlayerName}"></Label>
-            <Grid x:Name="fields" ColumnDefinitions="*,*">
-                <Entry Grid.Column="1" IsEnabled="False" Text="{Binding Salary}"></Entry>
-                <Entry Grid.Column="2" IsEnabled="False" Text="{Binding PassiveIncome}"></Entry>
-                <Entry Grid.Column="3" IsEnabled="False" Text="{Binding GeneralIncome}"></Entry>
-                <Entry Grid.Column="4" IsEnabled="False" Text="{Binding GeneralExpense}"></Entry>
-                <Entry Grid.Column="5" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
+        <StackLayout>
+            <Grid HorizontalOptions="Center" x:Name="fields" RowDefinitions="*,*" ColumnDefinitions="*,*">
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="0">Salary</Label>
+                <Entry Grid.Row="1" Grid.Column="0" IsEnabled="False" Text="{Binding Salary}"></Entry>
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="1">Passive income</Label>
+                <Entry Grid.Row="1" Grid.Column="1" IsEnabled="False" Text="{Binding PassiveIncome}"></Entry>
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="2">General income</Label>
+                <Entry Grid.Row="1" Grid.Column="2" IsEnabled="False" Text="{Binding GeneralIncome}"></Entry>
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="3">General expense</Label>
+                <Entry Grid.Row="1" Grid.Column="3" IsEnabled="False" Text="{Binding GeneralExpense}"></Entry>
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="4">Pay check</Label>
+                <Entry Grid.Row="1" Grid.Column="4" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
             </Grid>
-            <Grid x:Name="buttons" ColumnDefinitions="*,*">
+            <Grid x:Name="buttons" ColumnDefinitions="*">
                 <Button x:Name="saveChanges" IsVisible="False" Text="Save changes" Grid.Column="1"
                         Clicked="OnSaveChangesClicked" />
                 <Button Text="Edit finances" Grid.Column="2"

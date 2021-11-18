@@ -31,14 +31,22 @@ namespace CashFlow.Views
             Grid buttonsGrid = layout.FindByName<Grid>("buttons");
             Grid fieldsGrid = layout.FindByName<Grid>("fields");
             
-            fieldsGrid.Children.ForEach(f => f.IsEnabled = true);
+            fieldsGrid.Children.ForEach(f =>
+            {
+                if (f is Entry)
+                    f.IsEnabled = true;
+            });
             buttonsGrid.FindByName<Button>("saveChanges").IsVisible = true;
         }
 
         private async void OnSaveChangesClicked(object sender, EventArgs e)
         {
             await App.database.SavePlayerAsync(BindingContext as PlayerViewModel);
-            ((Button) sender).Parent.Parent.FindByName<Grid>("fields").Children.ForEach(f => f.IsEnabled = false);
+            ((Button) sender).Parent.Parent.FindByName<Grid>("fields").Children.ForEach(f =>
+            {
+                if (f is Entry)
+                    f.IsEnabled = false;
+            });
             ((Button) sender).IsVisible = false;
         }
     }
