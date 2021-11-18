@@ -9,7 +9,7 @@
             <viewModels:PlayerViewModel/>
         </ContentPage.BindingContext>
         <StackLayout>
-            <Grid HorizontalOptions="Center" x:Name="fields" RowDefinitions="*,*" ColumnDefinitions="*,*">
+            <Grid HorizontalOptions="Center" x:Name="Fields" RowDefinitions="*,*" ColumnDefinitions="*,*">
                 <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="0">Salary</Label>
                 <Entry Grid.Row="1" Grid.Column="0" IsEnabled="False" Text="{Binding Salary}"></Entry>
                 <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="1">Passive income</Label>
@@ -21,8 +21,8 @@
                 <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="4">Pay check</Label>
                 <Entry Grid.Row="1" Grid.Column="4" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
             </Grid>
-            <Grid x:Name="buttons" ColumnDefinitions="*">
-                <Button x:Name="saveChanges" IsVisible="False" Text="Save changes" Grid.Column="1"
+            <Grid x:Name="Buttons" ColumnDefinitions="*">
+                <Button x:Name="SaveChanges" IsVisible="False" Text="Save changes" Grid.Column="1"
                         Clicked="OnSaveChangesClicked" />
                 <Button Text="Edit finances" Grid.Column="2"
                         Clicked="OnEditModelButtonClicked" />

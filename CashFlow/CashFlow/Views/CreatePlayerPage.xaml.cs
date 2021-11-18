@@ -9,7 +9,6 @@ namespace CashFlow.Views
         public CreatePlayerPage()
         {
             InitializeComponent();
-            //Content.BindingContext = App.database.GetPlayerById(-1);
         }
         public CreatePlayerPage(object bindingContext)
         {
@@ -17,14 +16,6 @@ namespace CashFlow.Views
             BindingContext = bindingContext;
         }
 
-        /*protected override async void OnAppearing()
-        {
-            base.OnAppearing();/*
-            var player = await App.database.GetPlayerById(-1);
-            BindingContext = player;
-            this.ApplyBindings();#1#
-        }*/
-        
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             if (BindingContext is PlayerViewModel player)

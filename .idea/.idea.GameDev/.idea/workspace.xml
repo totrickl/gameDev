@@ -5,9 +5,10 @@
     <projectFile>CashFlow/CashFlow.Android/CashFlow.Android.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="upd">
+    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="fixed grid layout and isEnabled now work only for entries, added labels">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" afterDir="false" />
     </list>
@@ -24,6 +25,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/120/ShellNavigationState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/112/Shell.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/4/Forms.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/83/1f582f4f/Permission.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/B/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/c1/ef87150b/Environment.cs" root0="SKIP_HIGHLIGHTING" />
@@ -41,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3d3745f68e94f23a9c6f2b3d5ef4eeb15588/5/PropertyChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/67/Element_StyleSheets.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f06abd60facc44619779082a45c803361a390/3A/Permissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/D8/Page.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
@@ -89,7 +92,7 @@
       <workItem from="1637126433741" duration="311000" />
       <workItem from="1637126850400" duration="2360000" />
       <workItem from="1637214548736" duration="4467000" />
-      <workItem from="1637219097241" duration="1289000" />
+      <workItem from="1637219097241" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1637127995466</created>
@@ -105,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637138768588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed grid layout and isEnabled now work only for entries, added labels">
+      <created>1637220718609</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637220718609</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,36 +166,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd" />
+    <MESSAGE value="fixed grid layout and isEnabled now work only for entries, added labels" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed grid layout and isEnabled now work only for entries, added labels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs</url>
-          <line>33</line>
+          <line>24</line>
           <properties documentPath="D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\Views\CreatePlayerPage.xaml.cs" initialLine="33" containingFunctionPresentation="method 'OnSaveButtonClicked'">
             <startOffsets>
-              <option value="1030" />
+              <option value="703" />
             </startOffsets>
             <endOffsets>
-              <option value="1092" />
+              <option value="765" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs</url>
-          <line>46</line>
-          <properties documentPath="D:\asynytskyi\repos\GameDev\CashFlow\CashFlow\Views\PlayerMainPage.xaml.cs" initialLine="46" containingFunctionPresentation="lambda expression inside method 'OnSaveChangesClicked'">
-            <startOffsets>
-              <option value="1427" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1442" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

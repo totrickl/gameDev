@@ -28,26 +28,23 @@ namespace CashFlow.Views
         {
             var layout = ((Button) sender).Parent.Parent;
 
-            Grid buttonsGrid = layout.FindByName<Grid>("buttons");
-            Grid fieldsGrid = layout.FindByName<Grid>("fields");
-            
-            fieldsGrid.Children.ForEach(f =>
-            {
-                if (f is Entry)
-                    f.IsEnabled = true;
-            });
-            buttonsGrid.FindByName<Button>("saveChanges").IsVisible = true;
+            Grid buttonsGrid = layout.FindByName<Grid>("Buttons");
+            Grid fieldsGrid = layout.FindByName<Grid>("Fields");
+
+            SwitchEntriesEnabled(fieldsGrid.Children, true);
+            buttonsGrid.FindByName<Button>("SaveChanges").IsVisible = true;
         }
 
         private async void OnSaveChangesClicked(object sender, EventArgs e)
         {
             await App.database.SavePlayerAsync(BindingContext as PlayerViewModel);
-            ((Button) sender).Parent.Parent.FindByName<Grid>("fields").Children.ForEach(f =>
-            {
-                if (f is Entry)
-                    f.IsEnabled = false;
-            });
+            SwitchEntriesEnabled(((Button) sender).Parent.Parent.FindByName<Grid>("Fields").Children, false);
             ((Button) sender).IsVisible = false;
+        }
+
+        private void SwitchEntriesEnabled(IList<View> fields, bool enabled)
+        {
+            fields.OfType<Entry>().ForEach(f => f.IsEnabled = enabled);
         }
     }
 }
