@@ -5,98 +5,14 @@
     <projectFile>CashFlow/CashFlow.Android/CashFlow.Android.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="">
+    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="remove tracking from bin/obj">
       <change afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/Connector.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/IDataAccessor.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/StockDbManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/Resource.designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/CashFlow.Android.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Java.Interop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Java.Interop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Mono.Android.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Mono.Android.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Mono.Android.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Mono.Android.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Mono.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/Mono.Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Buffers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Buffers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.ComponentModel.Composition.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.ComponentModel.Composition.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Data.DataSetExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Data.DataSetExtensions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Drawing.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Drawing.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.IO.Compression.FileSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.IO.Compression.FileSystem.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.IO.Compression.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.IO.Compression.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Memory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Net.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Net.Http.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Numerics.Vectors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Numerics.Vectors.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Numerics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Numerics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Runtime.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Runtime.Serialization.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.ServiceModel.Internals.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.ServiceModel.Internals.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Threading.Tasks.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Threading.Tasks.Extensions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Transactions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Transactions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Web.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Web.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Xml.Linq.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Xml.Linq.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.Xml.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/System.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/mscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/mscorlib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/netstandard.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/assets/netstandard.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/bin/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/bin/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/bin/mono.android.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/bin/mono.android.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/bin/packaged_resources" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/bin/packaged_resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.arm64-v8a.o" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.arm64-v8a.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.arm64-v8a.s" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.arm64-v8a.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.armeabi-v7a-shared.inc" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.armeabi-v7a-shared.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.armeabi-v7a.o" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.armeabi-v7a.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.armeabi-v7a.s" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.armeabi-v7a.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.shared.inc" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.shared.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86.o" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86.s" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86_64.o" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86_64.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86_64.s" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/android/typemaps.x86_64.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/build.props" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/build.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/buildid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/buildid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/devices.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/devices.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/flat/values_colors.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/flat/values_colors.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/flat/values_styles.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/flat/values_styles.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/52/jl/flat/52.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/52/jl/flat/52.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/56/jl/flat/56.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/56/jl/flat/56.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/64/jl/flat/64.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/64/jl/flat/64.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/69/jl/flat/69.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/69/jl/flat/69.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/72/jl/flat/72.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/72/jl/flat/72.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/73/jl/flat/73.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/73/jl/flat/73.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/74/jl/flat/74.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/74/jl/flat/74.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/77/jl/flat/77.flata" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/lp/77/jl/flat/77.flata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/resolvedassemblies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/Debug/110/resolvedassemblies.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/App.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/PlayerDb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/PlayerDb.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/bin/Debug/netstandard2.0/CashFlow.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/bin/Debug/netstandard2.0/cashFlowGameData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/CashFlow.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/CashFlow.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/CashFlow.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/.NETStandard,Version=v2.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/App.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/AppShell.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/CashFlow.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/CashFlow.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/CashFlow.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/CashFlow.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/CashFlow.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/CashFlow.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/MainPage.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreateGamePage.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage1.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/GameEntyPage.xaml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/XamlC.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/obj/project.packagespec.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,26 +31,36 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/120/ShellNavigationState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/112/Shell.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/4/Forms.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/83/1f582f4f/Permission.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/B/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/c1/ef87150b/Environment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83c3732f9ce24539ba119e37dc4856a62400/1/CrossPermissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/2d/83fbefc7/IPermissions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01c96d411fe34bd5940c99a56515582b18c00/b9/a072dce7/SQLiteAsyncConnection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/41/ContentPage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage1.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/10/FormsAppCompatActivity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/5f/bed95e8b/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/GameEntyPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/50/DependencyService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/13/BindableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/144/TemplatedPage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/b7/6b1b5157/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3d3745f68e94f23a9c6f2b3d5ef4eeb15588/5/PropertyChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/4/Forms.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/App.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83c3732f9ce24539ba119e37dc4856a62400/1/CrossPermissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/DataAccess/PlayerDb.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83c3732f9ce24539ba119e37dc4856a62400/2d/83fbefc7/IPermissions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/41/ContentPage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/5f/bed95e8b/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/144/TemplatedPage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/b7/6b1b5157/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/67/Element_StyleSheets.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f06abd60facc44619779082a45c803361a390/3A/Permissions.shared.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/MainPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/D8/Page.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -186,7 +112,7 @@
       <workItem from="1637214548736" duration="4467000" />
       <workItem from="1637219097241" duration="4320000" />
       <workItem from="1637415103015" duration="401000" />
-      <workItem from="1637415542224" duration="3554000" />
+      <workItem from="1637415542224" duration="3882000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1637127995466</created>
@@ -230,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637223441904</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="remove tracking from bin/obj">
+      <created>1637419447309</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637419447309</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +212,8 @@
     <MESSAGE value="fixed grid layout and isEnabled now work only for entries, added labels" />
     <MESSAGE value="added 'add expense' function" />
     <MESSAGE value="update player view model with investments" />
-    <option name="LAST_COMMIT_MESSAGE" value="update player view model with investments" />
+    <MESSAGE value="remove tracking from bin/obj" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove tracking from bin/obj" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
