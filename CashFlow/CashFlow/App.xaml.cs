@@ -17,13 +17,13 @@ namespace CashFlow
     public partial class App : Application
     {
         private static PlayerDb _database;
-        public static PlayerDb database
+        public static PlayerDb Database
         {
             get
             {
                 if (_database == null)
                 {
-                    _database = new PlayerDb(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "player.db3"));
+                    _database = new PlayerDb();
                 }
                 return _database;
             }

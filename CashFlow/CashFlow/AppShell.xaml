@@ -1,9 +1,0 @@
-﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       x:Class="CashFlow.AppShell">
-       <!--<ShellContent Title="MainPage"
-                     ContentTemplate="{DataTemplate CreatePlayerPage}" />-->
-       <!--<ShellContent Title="Monkeys"
-                     Icon="monkey.png"
-                     ContentTemplate="{DataTemplate views:MonkeysPage}" />-->
-</Shell>

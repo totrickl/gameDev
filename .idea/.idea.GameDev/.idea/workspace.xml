@@ -5,14 +5,50 @@
     <projectFile>CashFlow/CashFlow.Android/CashFlow.Android.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="remove tracking from bin/obj">
-      <change afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/Connector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/IDataAccessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/StockDbManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/App.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/PlayerDb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/PlayerDb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" afterDir="false" />
+    <list default="true" id="0026596b-ca19-4dca-a157-3e3d90b22004" name="Changes" comment="cleanup, add .gitignore">
+      <change beforePath="$PROJECT_DIR$/CashFlow/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Assets/AboutAssets.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/CashFlow.Android.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/MainActivity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Properties/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/AboutResources.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/Resource.designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/layout/Tabbar.axml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/layout/Toolbar.axml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.Android/obj/.cache/com.companyname.CashFlow.flag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/AppDelegate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/CashFlow.iOS.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/Entitlements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/Main.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow.iOS/Resources/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Annotations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/App.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/App.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/AppShell.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/AppShell.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/CashFlow.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/DataAccess/PlayerDb.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/MainPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/BigCircle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/Business.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/Investment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/RealEstate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/SmallCircle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Models/Stock.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/ViewModels/PlayerViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/Views/PlayerMainPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CashFlow/CashFlow/cashFlowGameData.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +71,14 @@
     <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/B/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6dadd22e019742ce80aaefef99855be0142288/c1/ef87150b/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01c96d411fe34bd5940c99a56515582b18c00/b9/a072dce7/SQLiteAsyncConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage1.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/10/FormsAppCompatActivity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/GameEntyPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/50/DependencyService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/978ec34c5c9c4c4eb3d73b6da958bcd612a590/13/BindableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CashFlow/CashFlow/obj/Debug/netstandard2.0/Views/CreatePlayerPage.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3d3745f68e94f23a9c6f2b3d5ef4eeb15588/5/PropertyChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CashFlow/CashFlow.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/Views/CreatePlayerPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04c545f414d24a37af95d995791bb9a9d6990/4/Forms.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/asynytskyi/repos/GameDev/CashFlow/CashFlow/obj/Debug/netstandard2.0/App.xaml.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -112,7 +147,7 @@
       <workItem from="1637214548736" duration="4467000" />
       <workItem from="1637219097241" duration="4320000" />
       <workItem from="1637415103015" duration="401000" />
-      <workItem from="1637415542224" duration="3882000" />
+      <workItem from="1637415542224" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1637127995466</created>
@@ -163,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637419447309</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cleanup, add .gitignore">
+      <created>1637419834972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637419834972</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +255,8 @@
     <MESSAGE value="added 'add expense' function" />
     <MESSAGE value="update player view model with investments" />
     <MESSAGE value="remove tracking from bin/obj" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove tracking from bin/obj" />
+    <MESSAGE value="cleanup, add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup, add .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
