@@ -56,8 +56,6 @@ D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\Cash
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\cashFlowGameData.json
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.pdb
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.nativelibrary.dll
@@ -70,7 +68,10 @@ D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Syst
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\System.Text.Json.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.pdb
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\XamarinFormsLibrary1.dll
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\CashFlow.dll.mdb
-D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\bin\iPhoneSimulator\Debug\XamarinFormsLibrary1.pdb
 D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\CashFlow.iOS.csproj.AssemblyReference.cache
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\actool\_ProcessedImageAssetsPath.items
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\_ProcessedBundleResourcesPath.items
+D:\asynytskyi\repos\GameDev\CashFlow\CashFlow.iOS\obj\iPhoneSimulator\Debug\_ProcessedContentPath.items

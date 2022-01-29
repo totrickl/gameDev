@@ -9,7 +9,7 @@
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="CashFlow.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:configChanges="orientation|screenSize" android:label="CashFlow" android:theme="@style/MainTheme" android:name="crc64b6464a0411b1b017.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:label="CashFlow" android:theme="@style/MainTheme" android:name="crc64b6464a0411b1b017.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

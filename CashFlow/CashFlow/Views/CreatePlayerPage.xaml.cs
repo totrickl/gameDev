@@ -20,8 +20,8 @@ namespace CashFlow.Views
         {
             if (BindingContext is PlayerViewModel player)
             {
-                await App.database.SavePlayerAsync(player);
-                var playerCreated = await App.database.GetPlayerById(player.Id);
+                var playerCreated = await App.database.SavePlayerAsync(player);
+                // var playerCreated = await App.database.GetPlayerById(player.Id);
                 await Navigation.PushAsync(new PlayerMainPage(playerCreated)); 
             }
         }

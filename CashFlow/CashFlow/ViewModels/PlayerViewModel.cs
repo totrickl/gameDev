@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using CashFlow.Annotations;
+using System.Linq;
 using CashFlow.Models;
 using SQLite;
 
@@ -19,9 +17,9 @@ namespace CashFlow.ViewModels
         private int _generalExpense;
         private int _payCheck;
         private int _cash;
-        private ICollection<Investment> _businesses;
-        private ICollection<Investment> _stocks;
-        private ICollection<Investment> _realEstates;
+        private ICollection<BusinessViewModel> _businesses;
+        private ICollection<StockViewModel> _stocks;
+        private ICollection<RealEstateViewModel> _realEstates;
         #endregion
         //TODO: extend model with other fields
 
@@ -89,31 +87,37 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(Cash));
             }
         }
-        public ICollection<Investment> Businesses
+
+        [Ignore]
+        public ICollection<BusinessViewModel> Businesses
         {
             get => _businesses;
             set
             {
-                _businesses = value;
+                _businesses = value ??  Enumerable.Empty<BusinessViewModel>().ToList();
                 OnPropertyChanged(nameof(Businesses));
             }
         }
-        public ICollection<Investment> Stocks
+
+        [Ignore]
+        public ICollection<StockViewModel> Stocks
         {
             get => _stocks;
             set
             {
-                _stocks = value;
-                OnPropertyChanged(nameof(Stocks));
+                _stocks = value ??  Enumerable.Empty<StockViewModel>().ToList();
+                OnPropertyChanged(nameof(Businesses));
             }
         }
-        public ICollection<Investment> RealEstates
+
+        [Ignore]
+        public ICollection<RealEstateViewModel> RealEstates
         {
             get => _realEstates;
             set
             {
-                _realEstates = value;
-                OnPropertyChanged(nameof(RealEstates));
+                _realEstates = value ??  Enumerable.Empty<RealEstateViewModel>().ToList();
+                OnPropertyChanged(nameof(Businesses));
             }
         }
 
