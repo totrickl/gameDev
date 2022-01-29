@@ -1,1 +1,8 @@
 ﻿/.idea/.idea.GameDev/.idea/dataSources/f2f43057-fc93-4a3a-a13c-7528e09f12b3.xml
+./CashFlow/CashFlow.iOS/obj/
+./CashFlow/CashFlow.iOS/bin/
+./CashFlow/CashFlow.Android/bin/
+./CashFlow/CashFlow.Android/obj/
+./CashFlow/CashFlow/obj/
+./CashFlow/CashFlow/bin/
+.idea
