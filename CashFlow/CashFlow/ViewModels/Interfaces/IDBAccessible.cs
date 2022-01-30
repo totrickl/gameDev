@@ -9,6 +9,6 @@ namespace CashFlow.ViewModels
     {
         public Task<int> CreateAsync(T entity);
         public Task<T> GetByIdAsync(int id);
-        public Task<IEnumerable<T>> GetByUserIdAsync(int userId);
+        public Task<IEnumerable<T>> GetByPlayerIdAsync(int userId);
     }
 }

@@ -13,10 +13,12 @@ namespace CashFlow.DataAccess
     public class DbAccessor
     {
         private readonly SQLiteAsyncConnection connection;
-        // private readonly SQLiteConnection connection;
         private Stock _stock;
         private RealEstate _realEstate;
         private Business _business;
+
+        public int TotalPlayersCount => 
+            Task.Run(async () => (await connection.QueryAsync<PlayerViewModel>("select * from PlayerViewModel")).Count()).GetAwaiter().GetResult();
 
         public DbAccessor(string dbPath)
         {
@@ -34,35 +36,35 @@ namespace CashFlow.DataAccess
 
         public async Task<PlayerViewModel> SavePlayerAsync(PlayerViewModel player)
         {
-            if (player.Id != 0)
-            {
-                return await GetPlayerById(player.Id);
-            }
-            else
-            {
-                try
-                {
-                    await connection.InsertAsync(player);
-                    return (await connection.QueryAsync<PlayerViewModel>(@"SELECT * FROM PlayerViewModel")).LastOrDefault();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
-                // return await GetPlayerById(pid);
-            }
+            var existingPlayer = await GetPlayerById(player.Id);
+
+            if (existingPlayer == null)
+                await connection.InsertAsync(player);
+
+            if (EntityChanged(player, existingPlayer))
+                await connection.UpdateAsync(player);
+
+            return await connection.GetAsync<PlayerViewModel>(p => p.Id == player.Id);
+            // return (await connection.QueryAsync<PlayerViewModel>(@"SELECT * FROM PlayerViewModel")).LastOrDefault();
         }
 
-        public async Task<PlayerViewModel> GetPlayerById(int id)
+        private async Task<PlayerViewModel> GetPlayerById(int id) => await connection.GetAsync<PlayerViewModel>(p => p.Id == id);
+
+        public async Task<PlayerViewModel> GetLastAddedPlayer()
         {
-            if (id == -1)
-            {
-                return await SavePlayerAsync(new());
-            }
+            return (await connection.QueryAsync<PlayerViewModel>(@"SELECT * FROM PlayerViewModel ORDER BY Id")).LastOrDefault();
+        } 
 
-            return await connection.GetAsync<PlayerViewModel>(id);
-        }
+        private bool EntityChanged(PlayerViewModel inputEntity, PlayerViewModel existingEntity)
+            =>
+                inputEntity.Id != existingEntity.Id
+                && inputEntity.Cash != existingEntity.Cash
+                && inputEntity.GeneralExpense != existingEntity.GeneralExpense
+                && inputEntity.GeneralIncome != existingEntity.GeneralIncome
+                && inputEntity.PassiveIncome != existingEntity.PassiveIncome
+                && inputEntity.PayCheck != existingEntity.PayCheck
+                && inputEntity.PlayerName != existingEntity.PlayerName
+                && inputEntity.Salary != existingEntity.Salary;
     }
 }
 
@@ -82,7 +84,7 @@ public class Stock : ConnectionInitializer, IDbAccessible<StockViewModel>
         return await _connection.GetAsync<StockViewModel>(id);
     }
 
-    public async Task<IEnumerable<StockViewModel>> GetByUserIdAsync(int userId)
+    public async Task<IEnumerable<StockViewModel>> GetByPlayerIdAsync(int userId)
     {
         string query = @"select * from StockViewModel where PlayerId = ?";
         return await _connection.DeferredQueryAsync<StockViewModel>(query, userId);
@@ -105,7 +107,7 @@ public class RealEstate : ConnectionInitializer, IDbAccessible<RealEstateViewMod
         return await _connection.GetAsync<RealEstateViewModel>(id);
     }
 
-    public async Task<IEnumerable<RealEstateViewModel>> GetByUserIdAsync(int userId)
+    public async Task<IEnumerable<RealEstateViewModel>> GetByPlayerIdAsync(int userId)
     {
         throw new NotImplementedException();
     }
@@ -127,7 +129,7 @@ public class Business : ConnectionInitializer, IDbAccessible<BusinessViewModel>
         return await _connection.GetAsync<BusinessViewModel>(id);
     }
 
-    public async Task<IEnumerable<BusinessViewModel>> GetByUserIdAsync(int userId)
+    public async Task<IEnumerable<BusinessViewModel>> GetByPlayerIdAsync(int userId)
     {
         throw new NotImplementedException();
     }
