@@ -1,8 +1,43 @@
-﻿/.idea/.idea.GameDev/.idea/dataSources/f2f43057-fc93-4a3a-a13c-7528e09f12b3.xml
-./CashFlow/CashFlow.iOS/obj/
-./CashFlow/CashFlow.iOS/bin/
-./CashFlow/CashFlow.Android/bin/
-./CashFlow/CashFlow.Android/obj/
-./CashFlow/CashFlow/obj/
-./CashFlow/CashFlow/bin/
+﻿# Common IntelliJ Platform excludes
+
+# User specific
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/shelf/*
+**/.idea/dictionaries
+**/.idea/httpRequests/
+
+# Sensitive or high-churn files
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.ids
+**/.idea/**/dataSources.xml
+**/.idea/**/dataSources.local.xml
+**/.idea/**/sqlDataSources.xml
+**/.idea/**/dynamic.xml
+
+# Rider
+# Rider auto-generates .iml files, and contentModel.xml
+**/.idea/**/*.iml
+**/.idea/**/contentModel.xml
+**/.idea/**/modules.xml
+
+*.suo
+*.user
+.vs/
+[Bb]in/
+[Oo]bj/
+_UpgradeReport_Files/
+[Pp]ackages/
+
+/.idea/.idea.GameDev/.idea/dataSources/f2f43057-fc93-4a3a-a13c-7528e09f12b3.xml
+/CashFlow/CashFlow.iOS/obj/
+/CashFlow/CashFlow.iOS/bin/
+/CashFlow/CashFlow.Android/bin/
+/CashFlow/CashFlow.Android/obj/
+/CashFlow/CashFlow/obj/
+/CashFlow/CashFlow/bin/
 .idea
+
+Thumbs.db
+Desktop.ini
+.DS_Store

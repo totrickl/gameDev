@@ -4,13 +4,14 @@ using CashFlow.ViewModels;
 
 namespace CashFlow.Views
 {
-    public partial class CreatePlayerPage : ContentPage
+    public partial class ApplicationStartingPage : ContentPage
     {
-        public CreatePlayerPage()
+        public ApplicationStartingPage()
         {
             InitializeComponent();
         }
-        public CreatePlayerPage(object bindingContext)
+
+        public ApplicationStartingPage(object bindingContext)
         {
             InitializeComponent();
             BindingContext = bindingContext;
@@ -20,9 +21,9 @@ namespace CashFlow.Views
         {
             if (BindingContext is PlayerViewModel player)
             {
-                var playerCreated = await App.database.SavePlayerAsync(player);
+                var playerCreated = await App.Database.SavePlayerAsync(player);
                 // var playerCreated = await App.database.GetPlayerById(player.Id);
-                await Navigation.PushAsync(new PlayerMainPage(playerCreated)); 
+                await Navigation.PushAsync(new PlayerMainPage(playerCreated));
             }
         }
 

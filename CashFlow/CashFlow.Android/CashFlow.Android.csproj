@@ -14,7 +14,6 @@
         <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
         <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-        <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
         <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
         <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
         <LangVersion>latest</LangVersion>
@@ -67,7 +66,7 @@
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\CashFlow\CashFlow.csproj">
-            <Project>{8D5BB373-A7F7-45C1-88B9-99AE14624601}</Project>
+            <Project>{2C53FD75-C0F5-4CF0-9728-BEA3E03934F4}</Project>
             <Name>CashFlow</Name>
         </ProjectReference>
     </ItemGroup>

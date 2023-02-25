@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CashFlow"
+             xmlns:viewModels="clr-namespace:CashFlow.ViewModels;assembly=CashFlow"
+             x:Class="CashFlow.Views.MainPage">
+    <ContentPage.BindingContext>
+        <viewModels:MainPageViewModel/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout>
+        <ListView x:Name="MainPageView"
+                  ItemsSource="{Binding Players}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Tapped="OnGoToPlayerPageButtonClicked">
+                        <StackLayout>
+                            <Label Text="{Binding Id}" />
+                            <Label Text="{Binding PlayerName}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <!--Add Button Here -->
+        <Button VerticalOptions="End" Text="Create player" Clicked="OnCreatePlayerClicked"/>
+        <!--More Labels here -->
+    </StackLayout>
+
+</ContentPage>

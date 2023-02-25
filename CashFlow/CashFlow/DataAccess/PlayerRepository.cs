@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
-using CashFlow.Models;
-using System.Data;
-using System.Linq;
 using CashFlow.ViewModels;
 using CashFlow.ViewModels.Interfaces;
 
 namespace CashFlow.DataAccess
 {
-    public class DbAccessor
+    public partial class DbAccessor
     {
         private readonly SQLiteAsyncConnection connection;
+        private Business _business;
+        private RealEstate _realEstate;
+
         // private readonly SQLiteConnection connection;
         private Stock _stock;
-        private RealEstate _realEstate;
-        private Business _business;
 
         public DbAccessor(string dbPath)
         {
@@ -26,41 +24,47 @@ namespace CashFlow.DataAccess
             _realEstate = new(connection);
             _business = new(connection);
 
-            connection.CreateTableAsync<BusinessViewModel>();
-            connection.CreateTableAsync<RealEstateViewModel>();
-            connection.CreateTableAsync<StockViewModel>();
-            connection.CreateTableAsync<PlayerViewModel>();
+            Task.Run(async () =>
+            {
+                await connection.CreateTableAsync<BusinessViewModel>();
+                await connection.CreateTableAsync<RealEstateViewModel>();
+                await connection.CreateTableAsync<StockViewModel>();
+                await connection.CreateTableAsync<PlayerViewModel>();
+            }).GetAwaiter().GetResult();
+        }
+
+        public async Task<PlayerViewModel[]> GetPlayersAsync(int? take = null)
+        {
+            if (take is null) return Array.Empty<PlayerViewModel>();
+
+            try
+            {
+                return Task.Run(async () => await connection.Table<PlayerViewModel>().Take(take.Value).ToArrayAsync())
+                    .GetAwaiter().GetResult();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
+        public async Task<PlayerViewModel> UpdatePlayerAsync(PlayerViewModel player)
+        {
+            await connection.UpdateAsync(player);
+            return player;
         }
 
         public async Task<PlayerViewModel> SavePlayerAsync(PlayerViewModel player)
         {
-            if (player.Id != 0)
-            {
-                return await GetPlayerById(player.Id);
-            }
-            else
-            {
-                try
-                {
-                    await connection.InsertAsync(player);
-                    return (await connection.QueryAsync<PlayerViewModel>(@"SELECT * FROM PlayerViewModel")).LastOrDefault();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
-                // return await GetPlayerById(pid);
-            }
+            await connection.InsertAsync(player);
+            return player;
+            // return await GetPlayerById(player.Id);
         }
+
 
         public async Task<PlayerViewModel> GetPlayerById(int id)
         {
-            if (id == -1)
-            {
-                return await SavePlayerAsync(new());
-            }
-
             return await connection.GetAsync<PlayerViewModel>(id);
         }
     }

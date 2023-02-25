@@ -10,18 +10,20 @@
         </ContentPage.BindingContext>
         <StackLayout>
             <Grid HorizontalOptions="Center" x:Name="Fields" RowDefinitions="*,*" ColumnDefinitions="*,*">
-                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="0">Salary</Label>
-                <Entry Grid.Row="1" Grid.Column="0" IsEnabled="False" Text="{Binding Salary}"></Entry>
-                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="1">Passive income</Label>
-                <Entry Grid.Row="1" Grid.Column="1" IsEnabled="False" Text="{Binding PassiveIncome}"></Entry>
-                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="2">General income</Label>
-                <Entry Grid.Row="1" Grid.Column="2" IsEnabled="False" Text="{Binding GeneralIncome}"></Entry>
-                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="3">General expense</Label>
-                <Entry Grid.Row="1" Grid.Column="3" IsEnabled="False" Text="{Binding GeneralExpense}"></Entry>
-                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="4">Pay check</Label>
-                <Entry Grid.Row="1" Grid.Column="4" IsEnabled="False" Text="{Binding PayCheck}"></Entry>
-                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="5">Cash</Label>
-                <Entry Grid.Row="1" Grid.Column="5" IsEnabled="False" Text="{Binding Cash}"></Entry>
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="0">Name</Label>
+                <Entry Grid.Row="1" Grid.Column="0" IsEnabled="False" Text="{Binding PlayerName}" />
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="1">Salary</Label>
+                <Entry Grid.Row="1" Grid.Column="1" IsEnabled="False" Text="{Binding Salary}" />
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="2">Passive income</Label>
+                <Entry Grid.Row="1" Grid.Column="2" IsEnabled="False" Text="{Binding PassiveIncome}" />
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="3">General income</Label>
+                <Entry Grid.Row="1" Grid.Column="3" IsEnabled="False" Text="{Binding GeneralIncome}" />
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="4">General expense</Label>
+                <Entry Grid.Row="1" Grid.Column="4" IsEnabled="False" Text="{Binding GeneralExpense}" />
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="5">Pay check</Label>
+                <Entry Grid.Row="1" Grid.Column="5" IsEnabled="False" Text="{Binding PayCheck}" />
+                <Label FontAttributes="Bold" Grid.Row="0" Grid.Column="6">Cash</Label>
+                <Entry Grid.Row="1" Grid.Column="6" IsEnabled="False" Text="{Binding Cash}" />
             </Grid>
             <Grid x:Name="Buttons" ColumnDefinitions="*">
                 <Button x:Name="SaveChanges" IsVisible="False" Text="Save changes" Grid.Column="0"

@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using CashFlow.Models;
 using CashFlow.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -24,10 +22,10 @@ namespace CashFlow.Views
             InitializeComponent();
             BindingContext = bindingContext;
         }
-        
+
         private void OnEditModelButtonClicked(object sender, EventArgs e)
         {
-            var layout = ((Button) sender).Parent.Parent;
+            var layout = ((Button)sender).Parent.Parent;
 
             Grid buttonsGrid = layout.FindByName<Grid>("Buttons");
             Grid fieldsGrid = layout.FindByName<Grid>("Fields");
@@ -38,9 +36,9 @@ namespace CashFlow.Views
 
         private async void OnSaveChangesClicked(object sender, EventArgs e)
         {
-            await App.database.SavePlayerAsync(BindingContext as PlayerViewModel);
-            SwitchEntriesEnabled(((Button) sender).Parent.Parent.FindByName<Grid>("Fields").Children, false);
-            ((Button) sender).IsVisible = false;
+            await App.Database.UpdatePlayerAsync(BindingContext as PlayerViewModel);
+            SwitchEntriesEnabled(((Button)sender).Parent.Parent.FindByName<Grid>("Fields").Children, false);
+            ((Button)sender).IsVisible = false;
         }
 
         private void SwitchEntriesEnabled(IList<View> fields, bool enabled)

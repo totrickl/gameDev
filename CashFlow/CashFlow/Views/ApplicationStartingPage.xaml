@@ -3,7 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:CashFlow.ViewModels;assembly=CashFlow"
-             x:Class="CashFlow.Views.CreatePlayerPage">
+             x:Class="CashFlow.Views.ApplicationStartingPage">
        <ContentPage.BindingContext>
               <viewModels:PlayerViewModel/>
        </ContentPage.BindingContext>

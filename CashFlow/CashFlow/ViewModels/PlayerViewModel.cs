@@ -1,14 +1,31 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using CashFlow.Models;
+using System.Windows.Input;
 using SQLite;
+using Xamarin.Forms;
 
 namespace CashFlow.ViewModels
 {
     public class PlayerViewModel : INotifyPropertyChanged
     {
+        public ICommand OnPlayerClickCommand => new Command(OnPlayerClick);
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private async void OnPlayerClick(object s)
+        {
+            Console.WriteLine("fdsfdsfds");
+        }
+
+        void OnPropertyChanged(string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
         #region private fields
+
         [PrimaryKey, AutoIncrement] public int Id { get; set; }
         private string _playerName = string.Empty;
         private int _salary;
@@ -20,10 +37,13 @@ namespace CashFlow.ViewModels
         private ICollection<BusinessViewModel> _businesses;
         private ICollection<StockViewModel> _stocks;
         private ICollection<RealEstateViewModel> _realEstates;
+
         #endregion
+
         //TODO: extend model with other fields
 
         #region get/set
+
         public string PlayerName
         {
             get => _playerName;
@@ -33,15 +53,17 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(PlayerName));
             }
         }
+
         public int Salary
         {
-            get =>  _salary;
+            get => _salary;
             set
             {
                 _salary = value;
                 OnPropertyChanged(nameof(Salary));
             }
         }
+
         public int PassiveIncome
         {
             get => _passiveIncome;
@@ -51,6 +73,7 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(PassiveIncome));
             }
         }
+
         public int GeneralIncome
         {
             get => _generalIncome;
@@ -60,6 +83,7 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(GeneralIncome));
             }
         }
+
         public int GeneralExpense
         {
             get => _generalExpense;
@@ -69,6 +93,7 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(GeneralExpense));
             }
         }
+
         public int PayCheck
         {
             get => _payCheck;
@@ -78,6 +103,7 @@ namespace CashFlow.ViewModels
                 OnPropertyChanged(nameof(PayCheck));
             }
         }
+
         public int Cash
         {
             get => _cash;
@@ -94,7 +120,7 @@ namespace CashFlow.ViewModels
             get => _businesses;
             set
             {
-                _businesses = value ??  Enumerable.Empty<BusinessViewModel>().ToList();
+                _businesses = value ?? Enumerable.Empty<BusinessViewModel>().ToList();
                 OnPropertyChanged(nameof(Businesses));
             }
         }
@@ -105,7 +131,7 @@ namespace CashFlow.ViewModels
             get => _stocks;
             set
             {
-                _stocks = value ??  Enumerable.Empty<StockViewModel>().ToList();
+                _stocks = value ?? Enumerable.Empty<StockViewModel>().ToList();
                 OnPropertyChanged(nameof(Businesses));
             }
         }
@@ -116,18 +142,11 @@ namespace CashFlow.ViewModels
             get => _realEstates;
             set
             {
-                _realEstates = value ??  Enumerable.Empty<RealEstateViewModel>().ToList();
+                _realEstates = value ?? Enumerable.Empty<RealEstateViewModel>().ToList();
                 OnPropertyChanged(nameof(Businesses));
             }
         }
 
         #endregion
-        
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        void OnPropertyChanged(string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
